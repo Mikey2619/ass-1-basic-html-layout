@@ -1,1 +1,76 @@
-.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Basic HTML Layout</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+    header, nav, main, footer,aside.left, aside.right{
+        padding: 100px;
+        color: rgb(255, 255, 255);
+        text-align: center;
+    }
+    header {
+        padding: 50px;
+        background-color: #333;
+    }
+    nav {
+        padding: 50px;
+        background-color: #4CAF50;
+    }
+    aside.left{
+        padding: 100px;
+        background-color: #FF9800;
+        text-align: left;
+    }
+    aside.right {
+        padding: 100px;
+        background-color: #FF9800;
+        text-align: right;
+    }
+    main {
+        padding: 300px;
+        background-color: #2196F3;
+    }
+    footer {
+        padding: 50px;
+        background-color: #333;
+    }
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .content {
+        flex: 1;
+        padding: 20px;
+    }
+</style>
+</head>
+<body>
+    <header>
+        Header
+    </header>
+    <nav>
+        Navigation Menu
+    </nav>
+    <div class="container">
+        <aside class="left content">
+            Side Content
+        </aside>
+        <main class="content">
+            Main Content
+        </main>
+        <aside class="right content">
+            Side Content
+        </aside>
+    </div>
+    <footer>
+        Footer
+    </footer>
+</body>
+</html>
